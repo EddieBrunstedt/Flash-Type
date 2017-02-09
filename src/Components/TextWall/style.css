@@ -1,0 +1,12 @@
+.typewars-paragraph-text {
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-wall {
+    margin: 40px 0 40px 0;
+}
+
+.finished-word {
+    opacity: 0.4;
+}
