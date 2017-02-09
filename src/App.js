@@ -119,7 +119,7 @@ class App extends Component {
                 <div className="App container">
                     <div className="row">
                         <div className="col-xs-12">
-                            <h1 className="flashype-heading">Speed Typer</h1>
+                            <h1 className="flashtype-heading">Flash Type</h1>
                         </div>
                     </div>
                     <div className="row">
