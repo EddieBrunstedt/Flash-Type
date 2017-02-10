@@ -17,7 +17,7 @@ class InputField extends React.Component {
         return (
             <div className="form-group">
                 <input id="gameInputField" onChange={this.handleKeyDown.bind(this)} type="text"
-                       className="form-control input-lg"/>
+                       className="form-control input-lg text-center"/>
             </div>
         );
     }
