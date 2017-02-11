@@ -12,7 +12,6 @@ class App extends Component {
         super(props);
 
         const paragraph = chooseRndParagraph();
-        console.log('paragraph', paragraph);
 
         this.state = {
             inGame: 0,
@@ -23,16 +22,15 @@ class App extends Component {
             startTime: null,
             stopTime: null,
         };
+
         this.appendCurrentWord = this.appendCurrentWord.bind(this);
         this.handleSolveOneWord = this.handleSolveOneWord.bind(this);
         this.checkForGoal = this.checkForGoal.bind(this);
         this.handleStartGame = this.handleStartGame.bind(this);
-
     }
 
     handleStartGame() {
         this.setState({inGame: 1});
-
         let currentTime = 5;
 
         function timedEvent() {
@@ -52,7 +50,6 @@ class App extends Component {
                 });
             }
         }
-
         window.setTimeout(timedEvent, 500);
         window.setTimeout(timedEvent, 1500);
         window.setTimeout(timedEvent, 2500);
@@ -60,7 +57,6 @@ class App extends Component {
         window.setTimeout(timedEvent, 4500);
         window.setTimeout(timedEvent, 5500);
         window.setTimeout(timedEvent.bind(this), 6500);
-
     }
 
     handleRestartGame() {
@@ -113,7 +109,6 @@ class App extends Component {
     }
 
     render() {
-
         if (this.state.inGame === 0) {
             return (
                 <div className="App container">
@@ -133,7 +128,6 @@ class App extends Component {
                                     <h4>Good luck!</h4>
                                 </div>
                             </div>
-
                         </div>
                         <div className="col-xs-12">
                             <button onClick={this.handleStartGame.bind(this)} className="btn btn-default btn-lg">

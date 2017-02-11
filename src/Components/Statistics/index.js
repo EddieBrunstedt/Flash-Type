@@ -6,19 +6,10 @@ class Statistics extends React.Component {
 
     render() {
         const finishedAtMillis = this.props.stopTime - this.props.startTime;
-        console.log('finishedAtMillis', finishedAtMillis);
-
         const finishedAtPrettyParsed = prettyMs(finishedAtMillis, {verbose: true});
-        console.log('finishedAtPrettyParsed', finishedAtPrettyParsed);
-
         const wordsPerMillis = this.props.paragraphParsed.length / finishedAtMillis;
-        console.log('wordsPerMillis', wordsPerMillis);
-
         const wordsPerMinutes = (wordsPerMillis * 1000) * 60;
-        console.log('wordsPerSecs', wordsPerMinutes);
-
         const wordsPerMinutesRounded = Math.round(wordsPerMinutes * 100) / 100;
-        console.log('wordsPerSecsRounded', wordsPerMinutesRounded);
 
         if (this.props.paragraphParsed[this.props.currentWord]) {
             return (
