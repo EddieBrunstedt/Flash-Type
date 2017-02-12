@@ -167,7 +167,7 @@ class App extends Component {
                             <h1 className="flashtype-heading">Flash Type</h1>
                         </div>
                         <div className="col-xs-12">
-                            <div className="panel panel-default">
+                            <div className="paragraph-panel panel panel-default">
                                 <div className="panel-body">
                                     <TextWall paragraphParsed={this.state.paragraphParsed}/>
                                     <hr/>
