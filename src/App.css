@@ -3,8 +3,8 @@
 }
 
 body {
-    background-image: url("/img/background.jpg");
-    background-size: cover;
+    background-image: url("/img/backgroundPattern.jpg");
+    background-repeat: repeat;
 }
 
 .flashtype-heading {
